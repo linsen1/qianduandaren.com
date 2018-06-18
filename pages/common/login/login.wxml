@@ -1,0 +1,20 @@
+<!--pages/common/login/login.wxml-->
+<view class='container'>
+  <view class='logininfo'>
+    <image class='logo' src="/images/logo.png" style='width:160rpx' mode='widthFix' background-size="cover">
+    </image>
+    <view class='infotip'>
+      <view class='txtinfo'>
+        <text>您需要授权以下信息，才能获取更多服务:</text>
+      </view>
+      <view class='BR'></view>
+      <view class='otherinfo'>
+        <text>您的昵称、头像、性别等信息</text>
+      </view>
+
+<view class='loginbtn'>
+<button type="primary" size="default" open-type="getUserInfo" bindgetuserinfo='getUserInfo'> 登录授权</button>
+</view>
+  </view>
+    </view>
+</view>

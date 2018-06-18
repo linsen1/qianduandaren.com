@@ -1,0 +1,36 @@
+<!--pages/Source/index/index.wxml-->
+<view class='container'>
+
+<view wx:for="{{info}}" wx:key="{{item.id}}" >
+<view class='infos'>
+<view class='item'>
+<view class='BR'></view>
+
+<navigator url="../info/info?id={{item.id}}">
+<image src='{{item.bigImgUrl}}' mode='widthFix' style='width:720rpx'>
+</image>
+</navigator>
+
+<view class='txtinfo'>
+<view class='titletxt'>{{item.title}}</view>
+<view class='titleinfo'>{{item.about}}</view>
+</view>
+
+
+
+<view class='otherinfo'>
+
+<view class='txtfl'>分类:电子书</view>
+<view class='txtriqi'>{{item.created_at}}</view>
+
+</view>
+
+</view>
+
+<view class='BR'></view>
+<view class='BR'></view>
+</view>
+
+</view>
+
+</view>

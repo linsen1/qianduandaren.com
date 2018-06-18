@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/common/login/login",
+    "pages/source/index/index",
+    "pages/source/info/info"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "前端达人365",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#F6F6F6",
+    "color": "#888888",
+    "selectedColor": "#E15D29",
+    "list": [
+      {
+        "iconPath": "images/nav/article0.png",
+        "selectedIconPath": "images/nav/article.png",
+        "pagePath": "pages/index/index",
+        "text": "文章"
+      },
+      {
+        "iconPath": "images/nav/book0.png",
+        "selectedIconPath": "images/nav/book.png",
+        "pagePath": "pages/index/index",
+        "text": "手册"
+      },
+      {
+        "iconPath": "images/nav/do0.png",
+        "selectedIconPath": "images/nav/do.png",
+        "pagePath": "pages/source/index/index",
+        "text": "实践"
+      },
+      {
+        "iconPath": "images/nav/source0.png",
+        "selectedIconPath": "images/nav/source.png",
+        "pagePath": "pages/source/index/index",
+        "text": "资源"
+      },
+      {
+        "iconPath": "images/nav/my0.png",
+        "selectedIconPath": "images/nav/my.png",
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

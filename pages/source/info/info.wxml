@@ -1,0 +1,62 @@
+<!--pages/source/info/info.wxml-->
+<view class='container'>
+
+  <view class='imginfo'>
+    <image src='https://filedemo.qianduandaren.com/test/1529320622.jpg' mode='widthFix' style='width:720rpx'>
+    </image>
+  </view>
+
+  <view class='txttitle'>
+    <view class='titleinfo'>
+      <text>怎么学好JAVA?</text>
+    </view>
+    <view class='titleotherinfo'>
+      <view class='titlefenlei'>
+        <text>分类：电子书</text>
+      </view>
+      <view class='titleri'>
+        <text>2018-10-17</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='titleContent'>
+  <text> 好久未更新，感谢各位粉丝的不离不弃，虽然小编已转型做产品和管理，但是始终保持一份对前端的技术热情，总觉得应该写点什么分享给大家，同时也督促自己对前端的学习。虽然前端日新月异，但是万变不离其宗，基础理论和知识我们要扎实，这样才能更快速学习和掌握新的框架和知识。接下来的日子里，小编将会给大家分享一些比较基础的前端内容，希望大家喜欢，文末有彩蛋，一定要看完哦~好久未更新，感谢各位粉丝的不离不弃，虽然小编已转型做产品和管理，但是始终保持一份对前端的技术热情，总觉得应该写点什么分享给大家，同时也督促自己对前端的学习。虽然前端日新月异，但是万变不离其宗，基础理论和知识我们要扎实，这样才能更快速学习和掌握新的框架和知识。接下来的日子里，小编将会给大家分享一些比较基础的前端内容，希望大家喜欢，文末有彩蛋，一定要看完哦~</text> 
+  </view>
+
+</view>
+<view style='height:40px'></view>
+
+<view class='tools'>
+<view class='line'></view>
+<view class='toolcontent'>
+<view class='yulan'>
+<image src='/images/icon/view.png' style='width:30px' mode='widthFix'></image>
+</view>
+<view class='yulan1'>
+预览
+</view>
+
+<view class='yulan'>
+<image src='/images/icon/down.png' style='width:30px' mode='widthFix'></image>
+</view>
+<view class='yulan1'>
+下载
+</view>
+
+<view class='yulan'>
+<image src='/images/icon/fav.png' style='width:30px' mode='widthFix'></image>
+</view>
+<view class='yulan1' >
+收藏
+</view>
+
+<view class='yulan'>
+<image src='/images/icon/share.png' style='width:30px' mode='widthFix'></image>
+</view>
+<view class='yulan1'  >
+分享
+</view>
+
+</view>
+</view>
