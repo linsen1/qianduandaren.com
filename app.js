@@ -19,7 +19,7 @@ App({
             },
             success: function (res1) {
               wx.setStorageSync('openid', res1.data.openid);
-              util.JumpRegUser();
+              //util.JumpRegUser();
             }
           })
         }

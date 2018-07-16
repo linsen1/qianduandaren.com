@@ -23,9 +23,17 @@ var config = {
     // 测试的请求地址，用于测试会话
     RegUser: `${appService}/darenwx/regUser`,
     checkUser: `${appService}/darenwx/checkUser/`,
+    getUserInfo: `${appService}/darenwx/getuserinfo/`,
 
     //获取资源列表
     getResourceList: `${appService}/darenwx/getresourcelist`,
+    getResourceInfo: `${appService}/darenwx/getresource`,
+
+    //获取文章列表
+    getArticleList: `${appService}/darenwx/getArticleList`,
+    getArticleInfo: `${appService}/darenwx/getArticleInfo`,
+    getArticleContent: `${appService}/darenwx/getArticleContent`
+  
   }
 };
 

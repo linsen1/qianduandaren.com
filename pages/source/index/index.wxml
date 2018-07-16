@@ -2,6 +2,7 @@
 <view class='container'>
 
 <view wx:for="{{info}}" wx:key="{{item.id}}" >
+
 <view class='infos'>
 <view class='item'>
 <view class='BR'></view>
@@ -9,18 +10,20 @@
 <navigator url="../info/info?id={{item.id}}">
 <image src='{{item.bigImgUrl}}' mode='widthFix' style='width:720rpx'>
 </image>
-</navigator>
+
 
 <view class='txtinfo'>
 <view class='titletxt'>{{item.title}}</view>
 <view class='titleinfo'>{{item.about}}</view>
 </view>
 
-
+</navigator>
 
 <view class='otherinfo'>
+<view wx:if="{{item.type==0}}" class='txtfl'>分类:电子书</view>
+<view wx:elif="{{item.type==1}}" class='txtfl'>分类:源码</view>
+<view wx:else="{{item.type==2}}" class='txtfl'>分类:视频</view>
 
-<view class='txtfl'>分类:电子书</view>
 <view class='txtriqi'>{{item.created_at}}</view>
 
 </view>

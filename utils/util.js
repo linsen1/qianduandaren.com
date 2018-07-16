@@ -35,6 +35,7 @@ const regUser = function (userInfo){
       'content-type': 'application/json' // 默认值
     },
     success: function (res) {
+      wx.setStorageSync('userInfo', userInfo);
       console.log("用户授权后更新详细用户信息：" + res.data)
     }
 })}
@@ -45,10 +46,11 @@ const JumpRegUser=function(){
     method: 'POST',
     success: function (res2) {
       if (res2.data == 1) {
-        console.log('以获取授权信息');
+        console.log('已获取授权信息');
       }
       else {
-        wx.navigateTo({
+        console.log('跳转页面');
+        wx.reLaunch({
           url: '/pages/common/login/login'
         })
       }

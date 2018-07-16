@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "资源内容",
- 
-  "backgroundTextStyle": "drak"
+  "backgroundTextStyle": "drak",
+  "usingComponents": {
+    "htmltowxml": "plugin://htmltowxml/view"
+  }
 }

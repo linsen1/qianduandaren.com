@@ -2,6 +2,7 @@
 var self, page = 1;
 var config = require('../../../config');
 var util = require('../../../utils/util');
+const app = getApp();
 Page({
 
   /**
@@ -16,37 +17,38 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
     self = this;
-    getlist()
-  
+    getlist();
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    util.JumpRegUser();
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
@@ -67,7 +69,7 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   }
 })
 
@@ -76,7 +78,7 @@ function getlistMore() {
   self.setData({ 'loadingMoreHidden': false });
   wx.showNavigationBarLoading();
   wx.request({
-    url: config.service.getResourceList+'?page=' + page,
+    url: config.service.getResourceList + '?page=' + page,
     method: 'GET',
     header: {
       'content-type': 'application/json' // 默认值
@@ -107,7 +109,7 @@ function getlist() {
   page = 1;
   wx.showNavigationBarLoading();
   wx.request({
-    url: config.service.getResourceList+'?page=' + page,
+    url: config.service.getResourceList + '?page=' + page,
     method: 'GET',
     header: {
       'content-type': 'application/json' // 默认值

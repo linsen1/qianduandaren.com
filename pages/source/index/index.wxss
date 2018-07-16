@@ -20,18 +20,23 @@
   margin-bottom:4px; 
   padding-left: 5px;
   padding-right: 5px;
-  overflow: hidden;
-  text-overflow: ellipsis; 
-  height: 86px;
 }
 .titletxt{
   font-size: 16pt;
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
+  overflow: hidden;
 }
 .titleinfo{
  margin-top:6px;  
  font-size: 12pt; 
  color: #888888;
  line-height: 18pt;
+ display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
 }
 .line{
   width:96%;
